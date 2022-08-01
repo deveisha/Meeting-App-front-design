@@ -1,0 +1,180 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Video Calling Website UI Design</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
+
+    <style>
+        body {
+            background-color: rgb(73, 91, 92);
+        }
+
+        .flex-container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .flex-container>div {
+            width: 300px;
+            height: 250px;
+            display: flex;
+            box-sizing: border-box;
+            border: 2px solid gray;
+            justify-content: space-around;
+            background-color: darkgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont" style="display:flex; justify-content: space-between;">
+        <div class="call" style="width: 60%;">
+            <div class="flex-container mt-3">
+                <div>ahmad
+                    <div class="image mt-5">
+                        <img src="https://cdn-icons-png.flaticon.com/512/146/146031.png "
+                            style="height: 100px; width: fit-content; text-align:center; padding: top 5%;" alt="">
+                    </div>
+                    <span style="margin-top: 2%;">
+                        <i class="fa-solid fa-microphone-slash"></i>
+                    </span>
+                </div>
+                <div>Basit
+                    <div class="image mt-5">
+                        <img src="https://cdn-icons-png.flaticon.com/512/236/236831.png" style="height: 100px; width:100px;"
+                            alt="">
+                    </div>
+                    <span style="margin-top: 2%;">
+                        <i class="fa-solid fa-microphone-slash"></i>
+                    </span>
+                </div>
+                <div>Subhan
+                    <div class="image mt-5">
+                        <img src="data:image/png;base64,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"
+                            style="height: 100px; width: fit-content; text-align:center; padding: top 5%; border-radius: 50%; "alt="">
+        
+                </div>
+                <span style=" margin-top: 2%;">
+                        <i class="fa-solid fa-microphone-slash"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="flex-container mt-lg-5">
+                    <div>javeria
+                        <div class="image mt-5">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCXyTpemBnLAjDMD5uOiLr1W6RCC4s9k2eDg&usqp=CAU"
+                                style="height: 100px; width:100px; border-radius: 50%;" alt="">
+        
+                        </div>
+                        <span style="margin-top: 2%;">
+                            <i class="fa-solid fa-microphone-slash"></i>
+                        </span>
+                    </div>
+                    <div>Tuba
+                        <div class="image mt-5">
+                            <img src="https://p.kindpng.com/picc/s/756-7566340_person-girl-icon-png-clipart-png-download-bond.png"
+                                style="height: 100px; width:100px;border-radius: 50%;" alt="">
+                        </div>
+                        <span style="margin-top: 2%;">
+                            <i class="fa-solid fa-microphone-slash"></i>
+                        </span>
+                    </div>
+                    <div>Eisha
+                        <div class="image mt-5">
+                            <img src="	https://toppng.com/uploads/preview/girl-flat-icon-11549760838cubn4qroau.png"
+                                style="height: 100px; width:100px;border-radius: 50%;" alt="">
+                        </div>
+                        <span style="margin-top: 2%;">
+                            <i class="fa-solid fa-microphone-slash"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="participants" style="width: 38%; border: 2px solid rgb(65, 61, 61); margin-top: 1rem; ">
+                <div class="container">
+                    <div class="people mt-3" style="display: flex; justify-content: space-between; color: rgb(238, 242, 249);">
+                        <h4>People</h4>
+                        <h4>X</h4>
+                    </div>
+                    <div class="add" style="color: rgb(245, 247, 249);">
+                        <h6 class="mt-2"> <i class="fa-solid fa-user-plus" ></i> Add People</h6>
+                    </div>
+                    <div class="search d-flex mt-4">
+                        <div style="width:3rem; height:3rem; background-color: #fff; border-left: none;" >
+                            <i class="fa-solid fa-magnifying-glass mt-3 ml-3"></i>
+                        </div>
+                        <input type="search" placeholder="Search for People"  style="width: 100%; height: 3rem;  border: 1px solid gainsboro; padding-left: 1rem; ; position: relative;">
+                    </div>
+                    <h6 class="mt-3" style="color: #fff;">in call</h6>
+
+                    <div class="call-person d-flex justify-content-between" style="width: 100%; height: 4rem;">
+                        <div class="d-flex">
+                            <div class="mt-1 ml-1" style="width: 3rem; height: 3rem; border-radius: 50%; background-color: red; color: #fff;"> <img src="" alt=""> </div>
+                            <div class="ml-2 mt-1" style="color: #fff;">Ahmad <br>host</div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-4 mr-2" style="width: 4rem; color: #fff;">
+                            <i class="fa-solid fa-microphone-slash"></i>
+                            <i class="fa-solid fa-thumbtack"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white mt-3">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <span>
+                    <span>
+                        <i class="fa-solid fa-microphone-slash fa-1x mt-2 bg-danger"
+                            style="border-radius: 50%; padding: 20px; margin-left: 5%;"></i>
+                    </span>
+                </span>
+                <span>
+                    <i class="fa-solid fa-video-slash fa-1x mt-2 bg-danger"
+                        style="border-radius: 50%; padding: 20px;"></i>
+                </span>
+                <span>
+                    <i class="fa-solid fa-closed-captioning fa-1x mt-2 bg-danger"
+                        style="border-radius: 50%; padding: 20px;"></i>
+                </span>
+                <span>
+                    <i class="fa-solid fa-arrow-up-from-square fa-1x mt-2 bg-danger"></i>
+                </span>
+                <span>
+                    <span>
+                        <i class="fa-solid fa-share-from-square fa-1x mt-2 bg-danger"
+                            style="border-radius: 50%; padding: 20px;"></i>
+                    </span>
+                </span>
+                <span>
+                    <span>
+                        <i class="fa-solid fa-arrows-up-down-left-right fa-1x mt-2 bg-danger"
+                            style="border-radius: 50%; padding: 20px;"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-square-phone fa-1x mt-2 bg-danger"
+                            style="border-radius: 50%; padding: 20px;"></i>
+                    </span>
+                </span>
+                </span>
+        </div>
+        </div>
+        </div>
+</body>
+
+</html>
